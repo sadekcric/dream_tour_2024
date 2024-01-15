@@ -418,19 +418,58 @@ text-align: center;
 }
 
 /*newsletter_section  */
+.newsletter_section{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newsletter_section_div{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter_form{
+   border: 1px solid var(--orange);
+  padding:50px 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.newsletter_section img{
+  width: 100%;
+}
 
-  .newsletter_form{
-    width: 100%;
-    display: block;
-  }
+.newsletter_section h4{
+  color: var(--dark-1);
+font-size: 1.5rem;
+font-weight: 800;
+text-align: left;
+}
 
+.newsletter_section p{
+  color: var(--dark-2);
+line-height: 26px;
+margin: 15px 0 25px;
+text-align: left;
+}
 
+.newsletter_form input{
+  width: 100%;
+  padding: 15px 20px;
+}
+.newsletter_form input[type=text],
+.newsletter_form input[type=email]{
+  background: #1313180d;
+  border: none;
 
+}
 
-
-
-
-
+hr{
+  background: #1313180d;
+  margin-bottom: 20px;
+}
 
 
 
@@ -509,9 +548,19 @@ text-align: center;
   }
   .tour_details_background_bankok,
   .tour_details_background_singapur,
-.tour_details_background{
-  align-items: end;
-}
+  .tour_details_background{
+    align-items: end;
+  }
+
+  /* newsletter_section */
+  .newsletter_section{
+    flex-direction: column;
+    gap:30px
+  }
+
+  .newsletter_form{
+    width: 100%;
+  }
 }
 
 /* Medium device */
@@ -541,6 +590,16 @@ text-align: center;
   }
   .popular_tour_dtls{
     
+    width: 100%;
+  }
+
+  /* newsletter_section */
+  .newsletter_section{
+    flex-direction: column;
+    gap:30px
+  }
+
+  .newsletter_form{
     width: 100%;
   }
 }
