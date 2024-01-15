@@ -70,7 +70,7 @@ header{
 .desktop_nav ul{
   list-style: none;
   display: flex;
-  gap:0 15px;
+  gap:0 30px;
 }
 .desktop_nav ul li{
   transition: 0.5s;
