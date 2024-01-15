@@ -423,6 +423,7 @@ text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
 }
 .newsletter_section_div{
   height: 100%;
@@ -465,7 +466,6 @@ text-align: left;
   border: none;
 
 }
-
 hr{
   background: #1313180d;
   margin-bottom: 20px;
@@ -473,7 +473,6 @@ hr{
 .newsletter_img{
   position: relative;
 }
-
 .newsletter_img_div{
   position: absolute;
   padding:20px;
@@ -493,10 +492,6 @@ hr{
   margin: 0;
   color:#fff;
 }
-
-
-
-
 
 /* footer */
 footer{
