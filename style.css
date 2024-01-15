@@ -228,6 +228,92 @@ margin: 20px 0;
 /* popular_tour_section end */
 
 
+/* Choose Your Destination start */
+.choose_destination_section{
+  margin-bottom: 100px;
+}
+.choose_destination_section h3{
+  color:var(--dark-1);
+font-size: 3rem;
+font-weight: 800;
+text-align: center;
+}
+.choose_destination_section p{
+  color: var(--dark-2);
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px; 
+  max-width: 600px;
+  margin: 20px auto;
+}
+.choose_destination_img{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap:20px;
+}
+
+.choose_destination_img img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.choose_destination_img div{
+  height: 400px;
+  
+}
+.one{
+  grid-column: 1/7;
+}
+.choose_destination_img div{
+  position: relative;
+}
+
+.seven h6,
+.six h6,
+.five h6,
+.four h6,
+.three h6,
+.two h6,
+.one h6{
+  color:#fff;
+  font-size: 2rem;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.two{
+  grid-column: 7/-1;
+}
+.three{
+  grid-column: 1/5;
+}
+.four{
+  grid-column:5/10 ;
+}
+.five{
+  grid-column:10/-1 ;
+}
+.six{
+  grid-column:1/7 ;
+}
+.seven{
+  grid-column:7/-1;
+}
+
+/* Choose Your Destination end */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -277,6 +363,21 @@ margin: 20px 0;
   .popular_tour_dtls{
     width: 100%;
   }
+
+  /* choose_destination_img */
+  .choose_destination_img{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .seven,
+.six,
+.five,
+.four,
+.three,
+.two,
+.one{
+  grid-column: 1;
+}
 }
 
 /* Medium device */
