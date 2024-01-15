@@ -1,0 +1,133 @@
+/* universal */
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Mulish', sans-serif; */
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root{
+  --orange:#FF5400;
+  --dark-1:#131318;
+  --dark-2:#424247;
+}
+
+/* universal Done */
+/* header */
+
+header{
+  font-family: 'Mulish', sans-serif;
+  width: 80%;
+  max-width:1915px ;
+  margin: 50px auto 120px;
+}
+
+/* nav */
+/* logo */
+ .logo{
+  display: flex;
+  align-items: center;
+  gap:0 10px
+
+}
+.logo h3{
+  margin-top: -5px;
+}
+
+.logo h3 a{
+  color:var(--dark-1);
+  text-decoration: none;
+  font-size:2.25rem ;
+  font-weight: 800;
+}
+
+.logo h3 span{
+  color:var(--orange);
+}
+
+.logo img{
+  width: 100%;
+}
+
+/* for pc */
+.desktop_nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop_nav ul{
+  list-style: none;
+  display: flex;
+  gap:0 15px;
+}
+
+.desktop_nav ul li{
+  transition: 0.5s;
+}
+
+.desktop_nav a{
+  color: var(--dark-2);
+font-size: 1.1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.mobile_nav  li:hover,
+.desktop_nav li:hover{
+  transform: translateY(-3px);
+}
+
+.mobile_nav  li a:hover,
+.desktop_nav li a:hover{
+  color:var(--orange)
+}
+
+/* for mobile */
+.mobile_nav{
+  display: none;
+  padding-bottom: 50px;
+}
+.mobile_top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile_top i{
+  font-size: 2rem;
+}
+
+.mobile_list{
+  display: none;
+}
+
+#mobile_list_id li{
+  text-align: center;
+  list-style: none;
+  margin-top: 25px;
+  font-size: 1.25rem;
+}
+/* nav bar Done */
+
+/* poster section open*/
+
+
+
+
+
+/* Responsive for Mobile device */
+@media screen and (max-width:600px) {
+  .desktop_nav{
+    display: none;
+  }
+  .mobile_nav{
+    display: block;
+  }
+}
