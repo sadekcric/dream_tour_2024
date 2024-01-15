@@ -207,6 +207,8 @@ main{
 font-size:2.5rem ;
 font-weight: 800;
 }
+
+.choose_us_card p,
 .popular_tour_dtls p{
   color:var(--dark-2);
 line-height: 26px; 
@@ -232,12 +234,16 @@ margin: 20px 0;
 .choose_destination_section{
   margin-bottom: 100px;
 }
+
+.why_choose_section h3,
 .choose_destination_section h3{
   color:var(--dark-1);
 font-size: 3rem;
 font-weight: 800;
 text-align: center;
 }
+
+.why_choose_section p,
 .choose_destination_section p{
   color: var(--dark-2);
   text-align: center;
@@ -305,16 +311,46 @@ text-align: center;
 
 /* Choose Your Destination end */
 
+/* why_choose_section */
+.why_choose_section{
+  margin-bottom: 100px;
+}
+.choose_us_card img{
+  width: 15%;
+}
+.choose_us_card{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap:25px;
+  margin-top: 30px;
+}
 
+.choose_us_card div{
+  min-height: 200px;
+  min-width: 300px;
+  padding:20px;
+  border-radius: 10px;
+}
 
+.choose_us_card h5{
+  color:var(--dark-1);
+  font-size: 1.5rem;
+}
+.hotel{
+  grid-column: 1/7;
+  background: #fbb5630d;
+}
 
+.service{
+  grid-column: 7/-1;
+  background: #29cef60d;
+}
 
-
-
-
-
-
-
+.price_guarantee{
+  grid-column: 4/10;
+  background: #e944440d;
+}
 
 
 
@@ -327,6 +363,9 @@ text-align: center;
   header{
     width: 100%;
     padding:15px;
+  }
+  header{
+    margin-top: 10px;
   }
   .desktop_nav{
     display: none;
@@ -365,19 +404,25 @@ text-align: center;
   }
 
   /* choose_destination_img */
+  .choose_us_card,
   .choose_destination_img{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+
+  .hotel,
+  .service,
+  .price_guarantee,
   .seven,
-.six,
-.five,
-.four,
-.three,
-.two,
-.one{
-  grid-column: 1;
-}
+  .six,
+  .five,
+  .four,
+  .three,
+  .two,
+  .one{
+    grid-column: 1;
+  }
+  
 }
 
 /* Medium device */
