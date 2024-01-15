@@ -16,15 +16,25 @@
   --dark-2:#424247;
   --dark-3:#13131880;
 }
-
+body{
+  max-width:1915px ;
+}
+.btn{
+  background: var(--orange);
+  color:#fff;
+  border: none;
+  width:175px;
+  padding:16px;
+  border-radius: 6px;
+  font-weight: 600;
+}
 /* universal Done */
 /* header */
 
 header{
   font-family: 'Mulish', sans-serif;
   width: 80%;
-  max-width:1915px ;
-  margin: 50px auto 120px;
+  margin: 50px auto 100px;
 }
 
 /* nav */
@@ -93,6 +103,7 @@ line-height: normal;
 }
 .mobile_top i{
   font-size: 2rem;
+  cursor:pointer;
 }
 .mobile_list{
   display: none;
@@ -163,20 +174,58 @@ form div i{
   font-size: 1.5rem;
   color:var(--dark-3)
 }
+
 .poster button{
   display: flex;
   justify-content: center;
   gap:10px;
   align-items: center;
-  background: var(--orange);
-  color:#fff;
 }
 .poster button i{
   font-size: 1.5rem;
 }
 
+/* main */
+main{
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Mulish', sans-serif;
+}
+/* popular_tour_section start */
+.popular_tour_section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 600px;
+  margin-bottom: 100px;
+}
+.popular_tour_dtls{
+  width: 50%;
+}
+.popular_tour_dtls h4{
+  color: var(--dark-1);
+font-size:2.5rem ;
+font-weight: 800;
+}
+.popular_tour_dtls p{
+  color:var(--dark-2);
+line-height: 26px; 
+margin: 20px 0;
+}
+.popular_tour_dtls ul{
+  margin-left: 25px;
+}
+.popular_tour_dtls ul li{
+  padding:10px 0;
+}
+.popular_tour_img img{
+  width: 100%;
+}
 
-
+.popular_tour_dtls button{
+  margin: 20px 0;
+}
+/* popular_tour_section end */
 
 
 
@@ -188,7 +237,11 @@ form div i{
 /* Responsive for Mobile device */
 @media screen and (max-width:600px) {
   /* header */
-  
+  main,
+  header{
+    width: 100%;
+    padding:15px;
+  }
   .desktop_nav{
     display: none;
   }
@@ -210,9 +263,49 @@ form div i{
   }
 
   form div,
-.poster button,
-.poster input{
+  .poster button,
+  .poster input{
+    width:230px;
+    
+  }
+
+  /* main */
+  /* popular_tour_section */
+  .popular_tour_section{
+    flex-direction: column;
+  }
+  .popular_tour_dtls{
+    width: 100%;
+  }
+}
+
+/* Medium device */
+
+@media screen and (min-width:600px) and (max-width:1030px) {
+  .desktop_nav{
+    display: none;
+  }
+  .mobile_nav{
+    display: block;
+  }
+  form div,
+  .poster button,
+  .poster input{
   width:230px;
   
-}
+  }
+  .poster form{
+  flex-direction: column;
+  margin-bottom: 20px;
+  }
+
+  /* main */
+  /* popular_tour_section */
+  .popular_tour_section{
+    flex-direction: column;
+  }
+  .popular_tour_dtls{
+    
+    width: 100%;
+  }
 }
