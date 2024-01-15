@@ -372,7 +372,7 @@ text-align: center;
 }
 .tour_details_background_singapur,
 .tour_details_background{
-  background: url('images/bg1.png');
+  background: url('image/mal.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -403,7 +403,7 @@ text-align: center;
 
 /* bankok */
 .tour_details_background_bankok{
-  background: url('images/bg2.png');
+  background: url('image/bankok.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
