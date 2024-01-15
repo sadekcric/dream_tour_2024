@@ -235,6 +235,7 @@ margin: 20px 0;
   margin-bottom: 100px;
 }
 
+.deals_discount h3,
 .why_choose_section h3,
 .choose_destination_section h3{
   color:var(--dark-1);
@@ -243,6 +244,7 @@ font-weight: 800;
 text-align: center;
 }
 
+.deals_discount p,
 .why_choose_section p,
 .choose_destination_section p{
   color: var(--dark-2);
@@ -351,6 +353,76 @@ text-align: center;
   grid-column: 4/10;
   background: #e944440d;
 }
+/* why_choose_section Done*/
+
+
+/* Deals & Discounts section*/
+.deals_discount{
+  margin-bottom: 80px;
+}
+.tour_details{
+  max-width: 700px;
+  max-height: 500px;
+  background: rgba(255, 255, 255, 0.80);
+  margin: 10%;
+  padding:20px;
+  border-radius: 10px;
+}
+.tour_details_background_singapur,
+.tour_details_background{
+  background: url('images/bg1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content:end;
+  min-height: 600px;
+  align-items: center;
+  margin:50px 0;
+}
+.tour_details p{
+  text-align: left;
+}
+
+.tour_details h5{
+  color:var(--orange);
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+.tour_details div{
+  display: flex;
+  margin: 20px;
+}
+
+.tour_details i{
+  color:var(--orange)
+}
+
+/* bankok */
+.tour_details_background_bankok{
+  background: url('images/bg2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content:start;
+  min-height: 600px;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -422,7 +494,17 @@ text-align: center;
   .one{
     grid-column: 1;
   }
-  
+
+  /* Deals & Discounts section*/
+  .tour_details{
+    margin: 4%;
+    
+  }
+  .tour_details_background_bankok,
+  .tour_details_background_singapur,
+.tour_details_background{
+  align-items: end;
+}
 }
 
 /* Medium device */
