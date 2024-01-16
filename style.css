@@ -315,6 +315,102 @@ text-align: center;
 
 /* Choose Your Destination end */
 
+/* top destination */
+.top_destination_section{
+  margin-bottom: 100px;
+ 
+}
+.top_destination_section h3{
+  font-size: 2.8rem;
+  text-align: center;
+}
+.top_destination_section > p{
+  font-size:1.2rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+
+.top_destination_section img{
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.top_destination_img{
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(3, 1fr);
+gap:20px;
+
+}
+
+
+.thailand,
+.swizarland{
+  grid-column: 1/9;
+}
+
+
+.details_thailand,
+.details_swizarland{
+  grid-column: 9/-1;
+  box-shadow: 0 0 20px #ddd;
+  padding:20px;
+  border-radius: 10px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.details_kashmir{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/5;
+  box-shadow: 0 0 20px #ddd;
+  padding:20px;
+  border-radius: 10px;
+  height: 400px;
+}
+.details_thailand h4,
+.details_kashmir h4,
+.details_swizarland h4{
+  text-align: center;
+  font-size: 2rem;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.details_thailand p,
+.details_kashmir p,
+.details_swizarland p{
+  line-height: 1.25rem;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.kashmir{
+  grid-column: 5/-1;
+
+}
+
+.top_destination_img h5{
+  margin-bottom: 20px;
+  color:var(--orange);
+  font-weight: 700;
+}
+
+
+
+
+
+
 /* why_choose_section */
 .why_choose_section{
   margin-bottom: 100px;
@@ -381,6 +477,7 @@ text-align: center;
   min-height: 600px;
   align-items: center;
   margin:50px 0;
+  border-radius: 10px;
 }
 .tour_details p{
   text-align: left;
@@ -411,6 +508,7 @@ text-align: center;
   justify-content:start;
   min-height: 600px;
   align-items: center;
+  border-radius: 10px;
 }
 
 .deals_discount_button{
@@ -584,13 +682,14 @@ footer ul li a i{
   }
 
   /* choose_destination_img */
+  
   .choose_us_card,
   .choose_destination_img{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr;
   }
 
-  .hotel,
+ .hotel,
   .service,
   .price_guarantee,
   .seven,
@@ -603,7 +702,40 @@ footer ul li a i{
     grid-column: 1;
   }
 
-  /* Deals & Discounts section*/
+/* top destination */
+  .top_destination_img{
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .details_swizarland{
+    grid-row: 1;
+    grid-column: 1/-1;
+  }
+
+  .kashmir{
+    grid-row: 4;
+    grid-column: 1/-1;
+  }
+  .details_kashmir{
+    grid-row: 3;
+    grid-column: 1/-1;
+  }
+  .details_thailand{
+    grid-row: 5;
+    grid-column: 1/-1;
+  }
+  .thailand{
+    grid-row: 6;
+    grid-column: 1/-1;
+  }
+
+  .swizarland{
+    grid-row: 2;
+    grid-column: 1/-1;
+  }
+
+/* tour details */
   .tour_details{
     margin: 4%;
     
@@ -624,10 +756,11 @@ footer ul li a i{
     width: 100%;
   }
 
-  .newsletter_img_div{
-    right: 10px;
-    bottom:70px
-  }
+  .newsletter_img_div {
+    right: 7px;
+    bottom: 53px;
+    width: 58%;
+}
 
   footer{
     height: auto;
