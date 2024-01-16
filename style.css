@@ -312,10 +312,10 @@ text-align: center;
   grid-column:10/-1 ;
 }
 .six{
-  grid-column:1/7 ;
+  grid-column:1/6 ;
 }
 .seven{
-  grid-column:7/-1;
+  grid-column:6/-1;
 }
 
 /* Choose Your Destination end */
