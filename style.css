@@ -433,10 +433,14 @@ gap:20px;
   padding:20px;
   border-radius: 10px;
 }
-
+.why_choose_section p, h5{
+  text-align: left;
+  margin-left: 0;
+}
 .choose_us_card h5{
   color:var(--dark-1);
   font-size: 1.5rem;
+  margin-top: 20px;
 }
 .hotel{
   grid-column: 1/7;
@@ -514,6 +518,38 @@ gap:20px;
 
 .deals_discount_button{
   text-align: center;
+}
+
+/* perfect_place_section */
+.perfect_place_section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  gap:30px;
+}
+.perfect_place_section img{
+  width: 100%;
+  border-radius: 10px;
+
+}
+.perfect_place_details h3{
+  color: var(--dark-1);
+  font-size: 2.8rem;
+  text-align: left;
+  font-weight: 700;
+}
+.perfect_place_details p{
+  color:var(--dark-2);
+  margin:20px 0;
+  max-width: 600px;
+}
+.perfect_place_details ul{
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.perfect_place_details ul li{
+  color:var(--dark-1);
 }
 
 /*newsletter_section  */
@@ -747,6 +783,11 @@ footer ul li a i{
     align-items: end;
   }
 
+  /* .perfect_place_section */
+  .perfect_place_section{
+    flex-direction: column;
+  }
+
   /* newsletter_section */
   .newsletter_section{
     flex-direction: column;
@@ -771,7 +812,7 @@ footer ul li a i{
 
 /* Medium device */
 
-@media screen and (min-width:600px) and (max-width:1030px) {
+@media screen and (min-width:600px) and (max-width:992px) {
   .desktop_nav{
     display: none;
   }
@@ -799,6 +840,12 @@ footer ul li a i{
     width: 100%;
   }
 
+
+  /* .perfect_place_section */
+
+  .perfect_place_section{
+    flex-direction: column;
+  }
   /* newsletter_section */
   .newsletter_section{
     flex-direction: column;
